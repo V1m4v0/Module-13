@@ -65,7 +65,7 @@ async def send_calories(message, state):
     age = int(data['age'])
     growth = int(data['growth'])
     weight = int(data['weight'])
-    calories = (weight * 10) + (6.25 * growth) - (5 * age) + 5
+    calories = (weight * 10) + (6.25 * growth) - (5 * age) - 161
     await message.answer (f'Ваша норма калорий {calories} ккал в день')
     await state.finish()
 
